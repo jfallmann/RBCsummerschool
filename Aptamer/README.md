@@ -1,4 +1,4 @@
-# Theophyllein aptamer switch example
+# Theophyllin aptamer switch example
 
 
 ## Introduction
@@ -49,7 +49,8 @@ e^((-26,04+17,05)÷(((37+273,15)×1,98717)÷1000)) = 0,000000463 = 0,00% of stat
 
 ### with ligand
 ```sh
-RNAfold -p -C --motif="GAUACCAG&CCCUUGGCAGC,(...((((&)...)))...),-9.22" <( cat RS3mut.fa RS3_constraint.fa )
+RNAfold -p -C --motif="GAUACCAG&CCCUUGGCAGC,(...((((&)...)))...),-9.22"
+<( cat RS3mut.fa RS3_constraint.fa )
 ```
 
 prob(aptamer) = exp((pf - constraint_energy) / KT)
@@ -59,7 +60,7 @@ calculation should be:
 e^((-26,55+26,16)÷(((37+273,15)×1,98717)÷1000)) = 0,53110934 = 53,11% of states exhibit have the aptamer structure with ligand
 
 
-## References
-```
-Wachsmuth, Manja, Sven Findeiß, Nadine Weissheimer, Peter F. Stadler, and Mario Mörl. 2013. “De Novo Design of a Synthetic Riboswitch That Regulates Transcription Termination.” Nucleic Acids Research 41 (4): 2541–51. doi:10.1093/nar/gks1330.
-```
+## References ``` Wachsmuth, Manja, Sven Findeiß, Nadine Weissheimer,
+Peter F. Stadler, and Mario Mörl. 2013. “De Novo Design of a Synthetic
+Riboswitch That Regulates Transcription Termination.” Nucleic Acids
+Research 41 (4): 2541–51. doi:10.1093/nar/gks1330.  ```
