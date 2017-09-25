@@ -1,0 +1,425 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Workflow constructed from history 'Unnamed history'", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "RS3mut.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 10
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"RS3mut.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "ff3be6df-0f6e-4d86-8a10-a207ef20bfac", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "RS3_constraint.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 130
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"RS3_constraint.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "fc509391-7866-4e1d-abd0-d1e1fbaf0c83", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "RS3.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 250
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"RS3.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "1a216986-3fb6-4834-b947-511eeec1cab4", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_KS001.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 370
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_KS001.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "66428eae-5cba-4199-bd94-848908cedecd", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_AT001.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 490
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_AT001.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "3a339647-5a30-4525-93ea-719fe9d5d8f5", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_001.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 610
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_001.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "91fe47cb-ece0-4498-9d13-a23556a77a8f", 
+            "workflow_outputs": []
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_KS001_constraint.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 730
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_KS001_constraint.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "d8949284-9800-44aa-8b7d-a765bddc2abc", 
+            "workflow_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_KS001_bindingsite.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 850
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_KS001_bindingsite.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "40609c58-8634-4515-9109-5096092bd0ae", 
+            "workflow_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "pAG_TS1_001_constraint.fa"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 970
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"pAG_TS1_001_constraint.fa\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "9e3714b9-26c3-4030-a841-3cf50b03d2d2", 
+            "workflow_outputs": []
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "errors": null, 
+            "id": 9, 
+            "input_connections": {
+                "input_source|fasta_input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "RNAfold", 
+            "outputs": [
+                {
+                    "name": "sequence_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "matrix_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "tabular_file", 
+                    "type": "dbn"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "fcf2463f85c1", 
+                "name": "viennarna_rnafold", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"temperature\": \"\\\"37.0\\\"\", \"dangling\": \"\\\"2\\\"\", \"__rerun_remap_job_id__\": null, \"IDs\": \"{\\\"auto_id\\\": \\\"false\\\", \\\"id_digits\\\": \\\"4\\\", \\\"id_start\\\": \\\"1\\\", \\\"id_prefix\\\": \\\"sequence\\\"}\", \"measelect\": \"{\\\"pf\\\": \\\"true\\\", \\\"mea\\\": \\\"no\\\", \\\"__current_case__\\\": 1, \\\"pfScale\\\": \\\"1.07\\\"}\", \"input_source\": \"{\\\"select_fasta\\\": \\\"true\\\", \\\"fasta_input\\\": null, \\\"__current_case__\\\": 0}\", \"layout_type\": \"\\\"1\\\"\", \"advancedOptions\": \"{\\\"betaScale\\\": \\\"1.0\\\", \\\"nogu\\\": \\\"true\\\", \\\"nops\\\": \\\"false\\\", \\\"nsp\\\": \\\"\\\", \\\"bppmThreshold\\\": \\\"1e-05\\\", \\\"noclosinggu\\\": \\\"true\\\", \\\"notetra\\\": \\\"true\\\", \\\"noconversion\\\": \\\"true\\\", \\\"circular\\\": \\\"false\\\", \\\"nolp\\\": \\\"true\\\", \\\"gquad\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/usr/local/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/hg38.len\\\"\", \"constraints\": \"{\\\"constraintLocation\\\": {\\\"constraintSelector\\\": \\\"none\\\", \\\"__current_case__\\\": 0}, \\\"motif\\\": \\\"\\\", \\\"maxBPspan\\\": \\\"-1\\\", \\\"shapeOption\\\": {\\\"shapeSelector\\\": \\\"notUsed\\\", \\\"__current_case__\\\": 1}}\"}", 
+            "tool_version": "2.2.10.2", 
+            "type": "tool", 
+            "uuid": "eb97782a-1ea5-46f3-bdcb-ddb672b4858e", 
+            "workflow_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0", 
+            "errors": null, 
+            "id": 10, 
+            "input_connections": {
+                "inputs": [
+                    {
+                        "id": 1, 
+                        "output_name": "output"
+                    }, 
+                    {
+                        "id": 0, 
+                        "output_name": "output"
+                    }
+                ]
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Concatenate datasets", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 130
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "4c752559b236", 
+                "name": "text_processing", 
+                "owner": "bgruening", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"inputs\": \"null\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/usr/local/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/hg38.len\\\"\", \"queries\": \"[]\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "ee8e74cb-3686-4c4b-b876-0e973ab35242", 
+            "workflow_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "errors": null, 
+            "id": 11, 
+            "input_connections": {
+                "input_source|fasta_input": {
+                    "id": 10, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "RNAfold", 
+            "outputs": [
+                {
+                    "name": "sequence_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "matrix_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "tabular_file", 
+                    "type": "dbn"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "fcf2463f85c1", 
+                "name": "viennarna_rnafold", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"temperature\": \"\\\"37.0\\\"\", \"dangling\": \"\\\"2\\\"\", \"__rerun_remap_job_id__\": null, \"IDs\": \"{\\\"auto_id\\\": \\\"false\\\", \\\"id_digits\\\": \\\"4\\\", \\\"id_start\\\": \\\"1\\\", \\\"id_prefix\\\": \\\"sequence\\\"}\", \"measelect\": \"{\\\"pf\\\": \\\"true\\\", \\\"mea\\\": \\\"no\\\", \\\"__current_case__\\\": 1, \\\"pfScale\\\": \\\"1.07\\\"}\", \"input_source\": \"{\\\"select_fasta\\\": \\\"true\\\", \\\"fasta_input\\\": null, \\\"__current_case__\\\": 0}\", \"layout_type\": \"\\\"1\\\"\", \"advancedOptions\": \"{\\\"betaScale\\\": \\\"1.0\\\", \\\"nogu\\\": \\\"true\\\", \\\"nops\\\": \\\"false\\\", \\\"nsp\\\": \\\"\\\", \\\"bppmThreshold\\\": \\\"1e-05\\\", \\\"noclosinggu\\\": \\\"true\\\", \\\"notetra\\\": \\\"true\\\", \\\"noconversion\\\": \\\"true\\\", \\\"circular\\\": \\\"false\\\", \\\"nolp\\\": \\\"true\\\", \\\"gquad\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/usr/local/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/hg38.len\\\"\", \"constraints\": \"{\\\"constraintLocation\\\": {\\\"constraintSelector\\\": \\\"inFile\\\", \\\"__current_case__\\\": 1}, \\\"motif\\\": \\\"\\\", \\\"maxBPspan\\\": \\\"-1\\\", \\\"shapeOption\\\": {\\\"shapeSelector\\\": \\\"notUsed\\\", \\\"__current_case__\\\": 1}}\"}", 
+            "tool_version": "2.2.10.2", 
+            "type": "tool", 
+            "uuid": "f82a1297-9780-4ab6-b154-1a4ce8dd9198", 
+            "workflow_outputs": []
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "errors": null, 
+            "id": 12, 
+            "input_connections": {
+                "input_source|fasta_input": {
+                    "id": 10, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "RNAfold", 
+            "outputs": [
+                {
+                    "name": "sequence_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "matrix_outputs", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "tabular_file", 
+                    "type": "dbn"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 130
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/viennarna_rnafold/viennarna_rnafold/2.2.10.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "fcf2463f85c1", 
+                "name": "viennarna_rnafold", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"temperature\": \"\\\"37.0\\\"\", \"dangling\": \"\\\"2\\\"\", \"__rerun_remap_job_id__\": null, \"IDs\": \"{\\\"auto_id\\\": \\\"false\\\", \\\"id_digits\\\": \\\"4\\\", \\\"id_start\\\": \\\"1\\\", \\\"id_prefix\\\": \\\"sequence\\\"}\", \"measelect\": \"{\\\"pf\\\": \\\"true\\\", \\\"mea\\\": \\\"no\\\", \\\"__current_case__\\\": 1, \\\"pfScale\\\": \\\"1.07\\\"}\", \"input_source\": \"{\\\"select_fasta\\\": \\\"true\\\", \\\"fasta_input\\\": null, \\\"__current_case__\\\": 0}\", \"layout_type\": \"\\\"1\\\"\", \"advancedOptions\": \"{\\\"betaScale\\\": \\\"1.0\\\", \\\"nogu\\\": \\\"true\\\", \\\"nops\\\": \\\"false\\\", \\\"nsp\\\": \\\"\\\", \\\"bppmThreshold\\\": \\\"1e-05\\\", \\\"noclosinggu\\\": \\\"true\\\", \\\"notetra\\\": \\\"true\\\", \\\"noconversion\\\": \\\"true\\\", \\\"circular\\\": \\\"false\\\", \\\"nolp\\\": \\\"true\\\", \\\"gquad\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/usr/local/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/hg38.len\\\"\", \"constraints\": \"{\\\"constraintLocation\\\": {\\\"constraintSelector\\\": \\\"inFile\\\", \\\"__current_case__\\\": 1}, \\\"motif\\\": \\\"GAUACCAG&CCCUUGGCAGC,(...((((&)...)))...),-9.22\\\", \\\"maxBPspan\\\": \\\"-1\\\", \\\"shapeOption\\\": {\\\"shapeSelector\\\": \\\"notUsed\\\", \\\"__current_case__\\\": 1}}\"}", 
+            "tool_version": "2.2.10.2", 
+            "type": "tool", 
+            "uuid": "32cd1f18-b82f-4001-815a-89df86bf3935", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "d32a36e3-2955-406c-9945-436ecf98798c"
+}

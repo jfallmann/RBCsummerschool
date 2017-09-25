@@ -1,0 +1,33 @@
+Introduction
+Non-coding RNAs are often better conserved in their secondary
+structure, than in their sequence. Because of this families of
+non-coding RNAs are often defined due to structural
+similarity. RNAfold predicts the structure of a single sequence.
+RNAalifold can be used to predict the minimum energy structure that is
+simultaneously formed by a set of aligned sequences.  On the one hand
+this allows to determine if a set of sequences shares a common
+structure. On the other hand it can show if the structure of
+additional sequences fits to an already existing set of RNAs
+
+The examples show some RNA families where the common secondary
+structure is better conserved than the sequence.
+Examples:
+HACA_2 and HACA_18 are fungal H/ACA snoRNAs. They tend to have very extended
+loop regions
+(Source: Canzler, Sebastian, Peter F. Stadler, and Jana
+Hertel. "Evolution of fungal U3 snoRNAs: Structural variation and
+introns." Non-Coding RNA 3.1 (2017): 3.)
+RF00546 is a Drosophilid H/ACA snoRNA family.
+RF00006 are vault RNAs.
+(Source: www.rfam.org)
+
+Command line commands:
+The standard call is
+"RNAalifold < alignment.aln"
+
+"RNAalifold --color --aln < alignment.aln"
+results in additional coloring of the structure and also outputs the
+sequence alignment with additional information. Many other options are
+available, check --help.
+
+Look for the newly created .ps-files: alirna.ps (and aln.ps).
