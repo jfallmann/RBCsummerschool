@@ -1,0 +1,108 @@
+/*
+ * My personal Style tweaks
+ * --------------------------------------------------
+ */
+
+article h1 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+article h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+article h4 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+article .panel-heading.pub {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+article .panel-heading .sub {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+article .panel-heading.conference {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+article .panel-heading.pub a{
+  color: #333333;
+}
+
+article .pub .publishing {
+  font-size: 0.9em;
+  padding-top: 5px;
+  font-style:italic;
+}
+
+article .pub .authors {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+article .pub .note {
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style:italic;
+}
+
+article .pub .btn-group {
+  padding-top: 5px;
+}
+
+article a.btn-primary {
+  color: white;
+}
+
+article a.btn-default {
+  color: black;
+}
+
+
+.table .meta {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #999999;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+
+  ul.nav-justified {
+    display: table;
+    table-layout: fixed;
+    margin-bottom: 3px;
+  }
+  ul.nav-justified li {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  ul.nav-justified li > a {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  ul.nav-justified li > a > span.dist {
+    display: block;
+  }
+}
+
+ul.news {
+  height: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+}
