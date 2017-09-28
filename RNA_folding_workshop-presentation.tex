@@ -1,0 +1,205 @@
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+%\usepackage[dvips]{graphicx}
+\usepackage{graphics}
+\usepackage{sidecap}
+\usepackage{floatrow}
+\usepackage{pifont}
+\newcommand{\tick}{\ding{52}}
+\newcommand{\emptyline}{\vspace{\baselineskip}}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+\newcommand{\tabitem}{% To center items in itemize like way
+  \usebeamertemplate{itemize item[]}\hspace*{\labelsep}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\zenodo}{\href{http://dx.doi.org/10.5281/zenodo.61771}{Zenodo}}
+\newcommand\todo[1]{\color{red}#1\color{black}}
+%\usepackage[colorlinks = true,linkcolor = blue,urlcolor  = blue,citecolor = blue,anchorcolor = blue]{hyperref}
+%\usepackage{epstopdf}
+%\usetheme{Copenhagen}
+%\usecolortheme{beaver}
+\usetheme{boxes}
+\usecolortheme{default}
+%\useoutertheme{infolines}
+%\setbeamercovered{transparent}
+\beamertemplatenavigationsymbolsempty
+%\setbeamertemplate{footline}[frame number]
+\setbeamercolor{block body}{bg=white}
+\setbeamercolor{block head}{bg=white}
+\setbeamercolor{item}{fg=gray}
+%\setbeamertemplate{caption}[numbered]
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+\  \hbox{
+%\begin{beamercolorbox}[wd=.5\paperwidth,ht=4ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=4ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=4ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{white}%
+    \usebeamerfont{title in head/foot}\hfill\insertframenumber\,/\,\inserttotalframenumber%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\title[denbi]{de.NBI and its Galaxy interface for RNA folding}
+%\subtitle{}
+
+\author[J. Fallmann, J. Engelhardt ,Bioinf Leipzig]{
+	J\"org Fallmann\\Thanks to Bj\"orn Gr\"uning (RBC-Freiburg)\\ and Sarah Diehl (MPI-Freiburg)
+}
+\institute[IfI]{Institute for Bioinformatics\\University of Leipzig\\\href{http://www.bioinf.uni-leipzig.de/~fall/???}{http://www.bioinf.uni-leipzig.de/$\sim$fall/???}}
+\date{30.09.2016}
+
+\begin{document}
+
+\section{Vienna RNA package}
+\subsection{The Program \texttt{RNAfold}}
+%Our first task will be to do a structure prediction using
+%\texttt{RNAfold}. This should get you familiar with the input and output
+%format as well as the graphical output produced. \texttt{RNAfold} reads
+%RNA sequences from \emph{stdin}, calculates their minimum free energy
+%(\texttt{MFE}) structure, prints the \texttt{MFE} structure in
+%dot-bracket notation and its free energy to \emph{stdout}. If the
+%\texttt{-\/-partfunc} option is set it also computes the partition function, the
+%base pairing probability matrix and additionally prints the free energy
+%of the thermodynamic ensemble, the frequency of the \texttt{MFE}
+%structure in the ensemble and the ensemble diversity \todo{to \emph{stdout}}.
+%Another useful option is the \texttt{-\/-MEA} option, which also shows
+%the maximum expected accuracy, but remember that this also needs more
+%CPU time than without \texttt{-\/-MEA}.
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAfold} to do a simple structure prediction.
+
+\begin{itemize}
+\item Upload the file \texttt{test.seq} into your Galaxy session.
+\item Start \texttt{RNAfold} with standard parameters
+\item Look into the output
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAfold} to do a structure prediction with partition function and pair probabilities.
+
+\begin{itemize}
+\item Start \texttt{RNAfold} using -\/-partfunc and -\/-MEA
+\item Look into the output
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+Use SHAPE-directed \texttt{RNAfold} to do a structure prediction
+
+\begin{itemize}
+\item Upload the file \texttt{rna.shape} into your Galaxy session.
+\item Start RNAfold using the shape file and  -\/-shapeMethod=D
+\item Look into the output
+\end{itemize}
+}
+
+\subsection{The Program \texttt{RNApvmin}}
+\frame{
+\textbf{Goal}:
+Use \texttt{RNApvmin} to assist the SHAPE directed \texttt{RNAfold}.
+
+\begin{itemize}
+\item Use \texttt{RNApvmin} with the rna.shape file and rna.seq to create a vector.csv
+\item Start \texttt{RNAfold} using the vector.csv as shape file and  -\/-shapeMethod=W
+\item Compare the output with the other shape method
+\end{itemize}
+}
+
+\subsection{The Program \texttt{RNAcofold}}
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAcofold} to predict \todo{the co-folding of two sequences.}
+
+\begin{itemize}
+\item Upload the file \texttt{t.seq} into your Galaxy session. (Look at it)
+\item Start RNAcofold using t.seq with the -\/-partfunc option
+\item Look at the output.
+\end{itemize}
+}
+
+\subsection{The Program \texttt{RNAduplex}}
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAduplex} to predict \textit{only} intermolecular base pairs of two sequences.
+
+\begin{itemize}
+\item Upload the file \texttt{duplex.seq} into your Galaxy session. (Look at it)
+\item Start RNAduplex using duplex.seq with standard parameter
+\item Look at the output.
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAup} to test the \texttt{RNAduplex} result.
+
+\begin{itemize}
+\item Start RNAup using duplex.seq \todo{with -\/-b}
+\item Look at the output and compare it with the RNAduplex result.
+\end{itemize}
+
+\textbf{Bonus exercises}:
+\begin{itemize}
+\item Use RNAcofold for duplex.seq, as well (you have to edit the file)
+\item Investigate the interaction of two bacterial small RNAs from the file RybB.seq
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAalifold} to predict the consensus structure
+
+\begin{itemize}
+\item Upload the fasta file \texttt{four.seq} into your Galaxy session. 
+\item Use the alignment program clustalw to make an alignment.
+\item Use RNAfold with the alignment and -\/-partfunc
+\item \texttt{Bonus}: Fold the sequences individually (RNAfold) and compare the results.
+\end{itemize}
+}
+
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAalifold} to predict \textit{and visualize} the consensus structure
+
+\begin{itemize}
+\item Use RNAfold with the alignment and -\/-color and -\/-aln
+\item (Download the output) and look at it
+\end{itemize}
+}
+
+\end{document}
+
+%%% Example environments
+\frametitle{}
+       \begin{itemize}
+         \item 1
+         \item 2
+       \end{itemize}     
+  \begin{columns}[T]
+    \begin{column}{.25\paperwidth}
+     \begin{block}{}
+\vskip-18pt
+        %\includegraphics[scale=.2]{figures/TTP.eps}
+     \end{block}
+    \end{column}
+    \begin{column}{.5\paperwidth}
+      \begin{block}{}
+\vskip10pt 3
+      \end{block}
+    \end{column}
+  \end{columns}
+\begin{center}
+\vskip-8pt
+  How?
+\end{center}
