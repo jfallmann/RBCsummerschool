@@ -48,13 +48,21 @@
 %\subtitle{}
 
 \author[J. Fallmann, J. Engelhardt ,Bioinf Leipzig]{
-	J\"org Fallmann\\Thanks to Bj\"orn Gr\"uning (RBC-Freiburg)\\ and Sarah Diehl (MPI-Freiburg)
+	J\"org Fallmann, Jan Engelhardt\\
 }
-\institute[IfI]{Institute for Bioinformatics\\University of Leipzig\\\href{http://www.bioinf.uni-leipzig.de/~fall/???}{http://www.bioinf.uni-leipzig.de/$\sim$fall/???}}
-\date{30.09.2016}
+\institute[IfI]{Institute for Bioinformatics\\University of Leipzig}
+\date{\today}
 
 \begin{document}
+\titlepage
 
+\frame{
+  \section{Downloads}
+  
+  You can download the pdfs you will need today here
+  \href{http://www.bioinf.uni-leipzig.de/~fall/RNA\_folding\_workshop-presentation.pdf}{http://www.bioinf.uni-leipzig.de/$\sim$fall/RNA\_folding\_workshop-presentation.pdf}\\
+  \href{http://www.bioinf.uni-leipzig.de/~fall/Exercises.pdf}{http://www.bioinf.uni-leipzig.de/$\sim$fall/Exercises.pdf}
+}
 \section{Vienna RNA package}
 \subsection{The Program \texttt{RNAfold}}
 %Our first task will be to do a structure prediction using
@@ -84,12 +92,12 @@ Use \texttt{RNAfold} to do a simple structure prediction.
 
 \frame{
 \textbf{Goal}:
-Use \texttt{RNAfold} to do a structure prediction with partition function and pair probabilities.
+Use \texttt{RNAfold} to do a structure prediction using the partition function
 
-\todo{--partfunc and --MEA can not be used at the same time}
+%\todo{--partfunc and --MEA can not be used at the same time}
 
 \begin{itemize}
-\item Start \texttt{RNAfold} using -\/-partfunc and -\/-MEA
+\item Start \texttt{RNAfold} using -\/-partfunc
 \item Look into the output
 \end{itemize}
 }
@@ -98,7 +106,7 @@ Use \texttt{RNAfold} to do a structure prediction with partition function and pa
 \textbf{Goal}:
 Use SHAPE-directed \texttt{RNAfold} to do a structure prediction
 
-\todo{problem with shape files}
+%\todo{problem with shape files}
 
 \begin{itemize}
 \item Upload the file \texttt{rna.shape} into your Galaxy session.
@@ -107,27 +115,27 @@ Use SHAPE-directed \texttt{RNAfold} to do a structure prediction
 \end{itemize}
 }
 
-\subsection{The Program \texttt{RNApvmin}}
-\frame{
-\textbf{Goal}:
-Use \texttt{RNApvmin} to assist the SHAPE directed \texttt{RNAfold}.
+%\subsection{The Program \texttt{RNApvmin}}
+%\frame{
+%\textbf{Goal}:
+%Use \texttt{RNApvmin} to assist the SHAPE directed \texttt{RNAfold}.
+%
+%\todo{not tested}
 
-\todo{not tested}
-
-\begin{itemize}
-\item Use \texttt{RNApvmin} with the rna.shape file and rna.seq to create a vector.csv
-\item Start \texttt{RNAfold} using the vector.csv as shape file and  -\/-shapeMethod=W
-\item Compare the output with the other shape method
-\end{itemize}
-}
+%\begin{itemize}
+%\item Use \texttt{RNApvmin} with the rna.shape file and rna.seq to create a vector.csv
+%\item Start \texttt{RNAfold} using the vector.csv as shape file and  -\/-shapeMethod=W
+%\item Compare the output with the other shape method
+%\end{itemize}
+%}
 
 \subsection{The Program \texttt{RNAcofold}}
 \frame{
 \textbf{Goal}:
-Use \texttt{RNAcofold} to predict \todo{the co-folding of two sequences.}
+Use \texttt{RNAcofold} to predict the cofolding of two sequences.
 
-\todo{--partfunc does not make an rna structure eps, without
-  --partfunc two eps outputs are generated, one is empty}
+%\todo{--partfunc does not make an rna structure eps, without
+%  --partfunc two eps outputs are generated, one is empty}
 
 \begin{itemize}
 \item Upload the file \texttt{cofold.txt} into your Galaxy session. (Look at it)
@@ -189,13 +197,11 @@ Use \texttt{RNAalifold} to predict \textit{and visualize} the consensus structur
 
 \frame{
 \textbf{Goal}:
-\todo{Use \texttt{RNAcode} to predict coding sequences in a MAF alignment.}
-
-\todo{not installed yet}
+Use \texttt{RNAcode} to predict coding sequences in a MAF alignment.
 
 \begin{itemize}
 \item Upload the file \texttt{oskar.27way.rnacode.maf} into your Galaxy session.
-\item \todo{Change its data type to maf}
+\item (Change its data type to maf)
 \item Use RNAcode with the maf file
 \item (Download the output) and look at it
 \end{itemize}
@@ -205,9 +211,7 @@ Use \texttt{RNAalifold} to predict \textit{and visualize} the consensus structur
 \textbf{Goal}:
 Use \texttt{RNAz} 
 
-\todo{-d and -m are both activated by default}
-
-\todo{rnaz output is treated as fasta file and inmportant information is missing}
+%\todo{rnaz output is treated as fasta file and inmportant information is missing}
 
 \begin{itemize}
 \item Upload the file \texttt{oskar.27way.rnaz.maf} into your Galaxy session.
