@@ -76,7 +76,7 @@
 Use \texttt{RNAfold} to do a simple structure prediction.
 
 \begin{itemize}
-\item Upload the file \texttt{test.seq} into your Galaxy session.
+\item Upload the file \texttt{rna.fa} into your Galaxy session.
 \item Start \texttt{RNAfold} with standard parameters
 \item Look into the output
 \end{itemize}
@@ -85,6 +85,8 @@ Use \texttt{RNAfold} to do a simple structure prediction.
 \frame{
 \textbf{Goal}:
 Use \texttt{RNAfold} to do a structure prediction with partition function and pair probabilities.
+
+\todo{--partfunc and --MEA can not be used at the same time}
 
 \begin{itemize}
 \item Start \texttt{RNAfold} using -\/-partfunc and -\/-MEA
@@ -95,6 +97,8 @@ Use \texttt{RNAfold} to do a structure prediction with partition function and pa
 \frame{
 \textbf{Goal}:
 Use SHAPE-directed \texttt{RNAfold} to do a structure prediction
+
+\todo{problem with shape files}
 
 \begin{itemize}
 \item Upload the file \texttt{rna.shape} into your Galaxy session.
@@ -108,6 +112,8 @@ Use SHAPE-directed \texttt{RNAfold} to do a structure prediction
 \textbf{Goal}:
 Use \texttt{RNApvmin} to assist the SHAPE directed \texttt{RNAfold}.
 
+\todo{not tested}
+
 \begin{itemize}
 \item Use \texttt{RNApvmin} with the rna.shape file and rna.seq to create a vector.csv
 \item Start \texttt{RNAfold} using the vector.csv as shape file and  -\/-shapeMethod=W
@@ -120,9 +126,12 @@ Use \texttt{RNApvmin} to assist the SHAPE directed \texttt{RNAfold}.
 \textbf{Goal}:
 Use \texttt{RNAcofold} to predict \todo{the co-folding of two sequences.}
 
+\todo{--partfunc does not make an rna structure eps, without
+  --partfunc two eps outputs are generated, one is empty}
+
 \begin{itemize}
-\item Upload the file \texttt{t.seq} into your Galaxy session. (Look at it)
-\item Start RNAcofold using t.seq with the -\/-partfunc option
+\item Upload the file \texttt{cofold.txt} into your Galaxy session. (Look at it)
+\item Start RNAcofold using cofold.txt with the -\/-partfunc option
 \item Look at the output.
 \end{itemize}
 }
@@ -133,7 +142,7 @@ Use \texttt{RNAcofold} to predict \todo{the co-folding of two sequences.}
 Use \texttt{RNAduplex} to predict \textit{only} intermolecular base pairs of two sequences.
 
 \begin{itemize}
-\item Upload the file \texttt{duplex.seq} into your Galaxy session. (Look at it)
+\item Upload the file \texttt{duplex.txt} into your Galaxy session. (Look at it)
 \item Start RNAduplex using duplex.seq with standard parameter
 \item Look at the output.
 \end{itemize}
@@ -144,14 +153,13 @@ Use \texttt{RNAduplex} to predict \textit{only} intermolecular base pairs of two
 Use \texttt{RNAup} to test the \texttt{RNAduplex} result.
 
 \begin{itemize}
-\item Start RNAup using duplex.seq \todo{with -\/-b}
+\item Start RNAup using duplex.txt with -\/-include\_both
 \item Look at the output and compare it with the RNAduplex result.
 \end{itemize}
 
 \textbf{Bonus exercises}:
 \begin{itemize}
 \item Use RNAcofold for duplex.seq, as well (you have to edit the file)
-\item Investigate the interaction of two bacterial small RNAs from the file RybB.seq
 \end{itemize}
 }
 
@@ -160,10 +168,11 @@ Use \texttt{RNAup} to test the \texttt{RNAduplex} result.
 Use \texttt{RNAalifold} to predict the consensus structure
 
 \begin{itemize}
-\item Upload the fasta file \texttt{four.seq} into your Galaxy session. 
-\item Use the alignment program clustalw to make an alignment.
-\item Use RNAfold with the alignment and -\/-partfunc
-\item \texttt{Bonus}: Fold the sequences individually (RNAfold) and compare the results.
+\item Upload the clustal file \texttt{alifold.aln} into your Galaxy session. 
+\item Edit the data type of alifold.aln to 'clustal'
+\item Use RNAalifold with the alifold.aln and -\/-partfunc (Calculate partition function: 1)
+\item (Download the output) and look at it
+\item \texttt{Bonus}: Fold the sequences (alifold.fa) individually (RNAfold) and compare the results.
 \end{itemize}
 }
 
@@ -173,7 +182,36 @@ Use \texttt{RNAalifold} to predict the consensus structure
 Use \texttt{RNAalifold} to predict \textit{and visualize} the consensus structure
 
 \begin{itemize}
-\item Use RNAfold with the alignment and -\/-color and -\/-aln
+\item Use RNAalifold with alifold.aln and -\/-color and -\/-aln
+\item (Download the output) and look at it
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+\todo{Use \texttt{RNAcode} to predict coding sequences in a MAF alignment.}
+
+\todo{not installed yet}
+
+\begin{itemize}
+\item Upload the file \texttt{oskar.27way.rnacode.maf} into your Galaxy session.
+\item \todo{Change its data type to maf}
+\item Use RNAcode with the maf file
+\item (Download the output) and look at it
+\end{itemize}
+}
+
+\frame{
+\textbf{Goal}:
+Use \texttt{RNAz} 
+
+\todo{-d and -m are both activated by default}
+
+\todo{rnaz output is treated as fasta file and inmportant information is missing}
+
+\begin{itemize}
+\item Upload the file \texttt{oskar.27way.rnaz.maf} into your Galaxy session.
+\item Use RNAz with the maf file
 \item (Download the output) and look at it
 \end{itemize}
 }
