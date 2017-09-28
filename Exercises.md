@@ -15,7 +15,7 @@ The original sequence can be found in `RS3mut.fa`.
 1. Run RNAfold on the fasta input file RS3mut.fa
 2. Include the soft constraint that models theophyllin binding with --motif="GAUACCAG&CCCUUGGCAGC,(...((((&)...)))...),-9.22"
 3. Investigate the changes:
-...*How did the MFE change?
+..*How did the MFE change?
 
 
 The changes to the MFE will be very weak, what does that mean, were there changes at all and how can we find out?
@@ -25,9 +25,9 @@ The changes to the MFE will be very weak, what does that mean, were there change
 2. Include the soft constraint that models theophyllin binding with --motif="GAUACCAG&CCCUUGGCAGC,(...((((&)...)))...),-9.22"
 3. Predict the partition function
 3. Investigate the changes:
-...*How did the MFE change?
-...*How does the structure ensemble look like?
-...*Is the MFE strongly represented in the ensemble?
+..*How did the MFE change?
+..*How does the structure ensemble look like?
+..*Is the MFE strongly represented in the ensemble?
 
 Aha, high percentage of structures exhibit the aptamer structure bound to the ligand.
 But whats the percentage?
