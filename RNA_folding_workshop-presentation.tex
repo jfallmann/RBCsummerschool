@@ -126,6 +126,16 @@ Use \texttt{RNAfold} to do a structure prediction using the partition function
 }
 
 \frame{
+  \center
+  The partition function allows us to calculate the proportion
+  of a certain structure in the ensemble.\\ Use RNAfold -p to get the
+  ensemble free energy, which is related to the partition function via
+  \textbf{F = -RT*ln(Q)}, for the unconstrained (Fu) and the constrained case
+  (Fc), (use option -C), and evaluate \textbf{pc = exp((Fu - Fc)\/RT)} to get the desired
+  probability.
+}
+
+\frame{
   \begin{itemize}
   \item CUACGGCGCGGCGCCCUUGGCGA
   \item MFE: ...........((((...)))). ( -5.00)
