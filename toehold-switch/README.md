@@ -68,7 +68,9 @@ e^((-79,6+79,28)÷(((37+273,15)×1,98717)÷1000)) = 0.59499031774 = 59,50% of st
 
 
 ## References 
-``` Green, Alexander A., Pamela A. Silver,
+``` 
+Green, Alexander A., Pamela A. Silver,
 James J. Collins, and Peng Yin. 2014. “Toehold Switches:
 De-Novo-Designed Regulators of Gene Expression.” Cell 159 (4):
-925–39. doi:10.1016/j.cell.2014.10.002.  ```
+925–39. doi:10.1016/j.cell.2014.10.002.  
+```
