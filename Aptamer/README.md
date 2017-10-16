@@ -61,7 +61,9 @@ e^((-26,55+26,16)÷(((37+273,15)×1,98717)÷1000)) = 0,53110934 = 53,11% of stat
 
 
 ## References 
-``` Wachsmuth, Manja, Sven Findeiß, Nadine Weissheimer,
+```
+Wachsmuth, Manja, Sven Findeiß, Nadine Weissheimer,
 Peter F. Stadler, and Mario Mörl. 2013. “De Novo Design of a Synthetic
 Riboswitch That Regulates Transcription Termination.” Nucleic Acids
-Research 41 (4): 2541–51. doi:10.1093/nar/gks1330.  ```
+Research 41 (4): 2541–51. doi:10.1093/nar/gks1330. 
+```
